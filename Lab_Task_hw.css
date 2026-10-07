@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Lab_Task_1.css">
+</head>
+
+<body>
+
+    <h2>
+        Registration Form
+    </h2>
+
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4"></textarea><br><br>
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department">
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="English">English</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+
+        <input type="submit" value="Register" ;>
+
+        <input type="reset" value="Reset" ;>
+    </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+style.css
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #dfe9f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note,
+.steps {
+    font-size: 13px;
+}
+
+.req {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #1a5fb4;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+legend {
+    color: #1a5fb4;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 35%;
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+}
+
+label.inline {
+    font-weight: normal;
+    margin-right: 8px;
+}
+
+small {
+    font-weight: normal;
+    color: #555555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+}
+
+input.small {
+    width: 60px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1a5fb4;
+    outline: none;
+    box-shadow: 0 0 4px #1a5fb4;
+}
+
+.gray {
+    color: #777777;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.buttons input {
+    padding: 7px 25px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a5fb4;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons input[type="reset"] {
+    background-color: #777777;
+}
+
+.buttons input:hover {
+    opacity: 0.85;
+}
+
+.footer {
+    font-size: 12px;
+    color: #444444;
+}
+
+.footer a {
+    color: #1a5fb4;
+}
